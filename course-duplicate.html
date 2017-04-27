@@ -1,0 +1,85 @@
+<h2>Dupliquer ce cours</h2>
+<div>
+    <input type="checkbox" id="ndd-amintool-users" /><label for="ndd-amintool-users">Conserver les utilisateurs (inscriptions et données)</label>
+</div>
+<div>
+    <input type="checkbox" id="ndd-amintool-keepteachers" checked="checked" /><label for="ndd-amintool-keepteachers">Réinscrire les enseignants et assistants</label>
+</div>
+<div class="ndd-amintool-goto">
+    <input type="checkbox" id="ndd-amintool-goto" /><label for="ndd-amintool-goto">Afficher le nouveau cours une fois la copie terminée</label>
+</div>
+<div>
+    <input type="checkbox" id="ndd-amintool-arch" /><label for="ndd-amintool-arch">Archiver ce cours (si possible)</label>
+</div>
+<div>
+    <p>Nom complet du nouveau cours :</p>
+    <input type="text" id="ndd-amintool-fullname" />
+</div>
+<div>
+    <p>Nom abrégé du nouveau cours :</p>
+    <input type="text" id="ndd-amintool-shortname" />
+</div>
+<div class="course-duplicate-hidden">
+    <p>Clef d'inscription du nouveau cours :</p>
+    <input type="text" id="ndd-amintool-enrolpassword" />
+</div>
+<div>
+    <input type="checkbox" id="ndd-amintool-open" /><label for="ndd-amintool-open">Autoriser l'accès étudiant au nouveau cours</label>
+</div>
+
+<div class="okay">
+    <button id="ndd-amintool-ok">OK</button>
+    <button id="ndd-amintool-cancel">Annuler</button>
+</div>
+
+<style type="text/css">
+
+    .course-duplicate-hidden {
+        display: none;
+    }
+
+    #ndd-amintool-overlay {
+        z-index: 99;
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    #ndd-amintool-overlay div {
+        margin: 10px 0;
+    }
+
+    #ndd-amintool-overlay div.okay {
+        margin: 30px 0 0 0;
+        float: right;
+    }
+
+    #ndd-amintool-overlay h2 {
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+
+    #ndd-amintool-overlay p {
+        margin: 10px 0 5px 0;
+    }
+
+    #ndd-amintool-overlay > div {
+        background-color: #fff;
+        position: absolute;
+        top: 15%;
+        right: 25%;
+        left: 25%;
+        box-shadow: 0 0 10px #000;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    #ndd-amintool-overlay input[type=text] {
+        width: 70%;
+    }
+
+</style>
